@@ -96,7 +96,9 @@ if index(g:bundle_group, 'basic') >= 0
 
 	" 一次性安装一大堆 colorscheme
 	Plug 'flazz/vim-colorschemes'
-
+	" 安装colorscheme
+	Plug 'rakr/vim-one'
+	Plug 'lifepillar/vim-solarized8'
 	" 支持库，给其他插件用的函数库
 	Plug 'xolox/vim-misc'
 
@@ -118,6 +120,15 @@ if index(g:bundle_group, 'basic') >= 0
 
 	" Git 支持
 	Plug 'tpope/vim-fugitive'
+	
+	"多光标操作
+	Plug 'terryma/vim-multiple-cursors'
+	"多光标操作快捷键
+	let g:multi_cursor_use_default_mapping=0
+	let g:multi_cursor_next_key='<A-d>'
+	let g:multi_cursor_prev_key='<A-u>'
+	let g:multi_cursor_skip_key='<A-x>'
+	let g:multi_cursor_quit_key='<Esc>'
 
 	" 使用 ALT+E 来选择窗口
 	nmap <m-e> <Plug>(choosewin)

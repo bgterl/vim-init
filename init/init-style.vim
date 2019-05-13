@@ -43,6 +43,10 @@ set splitright
 " 颜色主题：色彩文件位于 colors 目录中
 "----------------------------------------------------------------------
 
+set termguicolors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+
 " 设置黑色背景
 set background=dark
 
@@ -50,7 +54,9 @@ set background=dark
 set t_Co=256
 
 " 设置颜色主题，会在所有 runtimepaths 的 colors 目录寻找同名配置
-color desert256
+" color desert256
+" color solarized8
+color one
 
 
 "----------------------------------------------------------------------
